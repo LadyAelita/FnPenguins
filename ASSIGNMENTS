@@ -26,7 +26,7 @@ The map.c file - all the functions reading data files and returning actual usabl
 3) THE CONTROL FUNCTIONS  /
 -------------------------/
 
-Who: Adam, Jakub
+Who: Adam, Jakub 
 
 What:
 The control.c file, including functions handling the back-end of the playable part of the game. Stuff like hexagonal interpretation of the map, etc.
