@@ -10,5 +10,9 @@
 #define mapgen_h
 
 #include <stdio.h>
+#include<time.h>
+int rand();
+int random_number(int min, int max);
+void generate_map(char map[100][100],int min,int max);
 
 #endif /* mapgen_h */
