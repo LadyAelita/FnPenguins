@@ -7,15 +7,23 @@
 //
 
 #include "display.h"
+#define SIZE 20
 
-void print_map(char **data, int rows, int columns){
-    int i,j;
-    for(i=0;i<rows;i++){
-        if(!(i % 2))
-            printf(" ");
-        for(j=0;j<columns;j++){
-            printf(" %c",data[j][i]);
+int random_number(int min, int max){
+    return (rand()%(max-min+1)+min);
+}
+
+void print_map(char data[100][100], int rows, int columns,int min, int max){
+    
+    for(int i=0;i<columns;i++){
+        for(int j=0;j<rows;j++){
+            data[i][j]=random_number(min,max);
+            if(data[i][j]==0)
+                printf("   ");
+            else printf(" %d ",data[i][j]);
+            
         }
         printf("\n");
-    }
+        }
+    
 }
