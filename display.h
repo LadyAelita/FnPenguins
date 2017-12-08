@@ -10,8 +10,12 @@
 #define display_h
 
 #include <stdio.h>
+#include<time.h>
+
+void print_map(char data[100][100], int rows, int columns,int min, int max);
+int rand();
+int random_number(int min, int max);
 
 
-void print_map(char **data, int rows, int columns);
 
 #endif /* display_h */
